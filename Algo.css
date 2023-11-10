@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url(rama.jpg)
+
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background-color: rgb(110, 217, 223);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 05px 10px rgba(0, 0, 0, 15);
+}
+.container h3{
+    margin-left: 200px;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: black;
+
+}
+.container h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, blue, pink);
+
+}
+.container .content{
+    margin-left: 200px;
+}
+
+.content form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user .input{
+    margin-bottom: 15px;
+    width: calc(100% /2-20px);
+}
+form .user span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user .input input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid white;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user .input input:focus,
+.user .input input:valid{
+    border-color: aquamarine;
+} 
+.container .btn button{
+    position: relative;
+        /* background: transparent; */
+        width: 200px;
+        padding: 5px 0;
+        text-align: center;
+        margin: 20px 10px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        overflow: hidden;
+        text-transform: uppercase;
+}
+
+.container .btn button:hover{
+    background: red;
+    color: wheat;
+}
+
+.container .btn .home  button {
+    position: relative;
+    background: white;
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-left: 430px;
+}
+
+.container .btn .home button .back{
+    margin-left: 200px;
+}
+.container .home button:hover {
+    color: black;
+}
